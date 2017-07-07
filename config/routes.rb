@@ -1,3 +1,6 @@
 AcaRails::Engine.routes.draw do
-  resources :users
+  resources :users do
+    collection { get :versions }
+  end
+
 end

@@ -10,6 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require article/jquery-3.2.1.min
+//= require aca_rails/jquery-3.2.1.min
 //= require_tree .
-//= require article/bootstrap
+//= require aca_rails/bootstrap

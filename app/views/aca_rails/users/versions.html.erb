@@ -1,0 +1,5 @@
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "Users CRUD History"} %>
+
+<%= render partial: 'layouts/aca_rails/tabs', locals: {controller_class: controller_name , action: "versions", search_field:"name_cont"} %>
+
+<%= render partial: 'layouts/aca_rails/versions', locals: {versions: @versions}%>

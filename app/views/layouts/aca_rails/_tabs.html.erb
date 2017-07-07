@@ -1,0 +1,62 @@
+<!-- Tab menu-->
+<%
+  classe_index = classe_new = classe_edit = classe_show = classe_versions = "nav-link"
+  case action
+    when "index"
+      classe_index = "nav-link active"
+    when "new"
+      classe_new = "nav-link active"
+    when "edit"
+      classe_edit = "nav-link active"
+    when "show"
+      classe_show = "nav-link active"
+    when "versions"
+      classe_versions = "nav-link active"
+  end
+%>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item" >
+      <%= link_to "Index", {controller: controller_class , action: "index"}, class: classe_index %>
+  </li>
+  <li class="nav-item" >
+      <%= link_to "New", {controller: controller_class , action: "new"}, class: classe_new %>
+  </li>
+
+  <li class="nav-item" >
+      <%= link_to "Versions",{controller: controller_class , action: "versions"}, class: classe_versions %>
+  </li>
+
+  <% if action=="edit" or action=="show" %>
+      <li class="nav-item">
+        <%= link_to "Edit",{controller: controller_class , action: "edit"}, class: classe_edit %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Show",{controller: controller_class , action: "show"}, class: classe_show %>
+      </li>
+  <% end %>
+
+
+  <% if action=="index" %>
+      <li class="nav-item pl-5 ml-5">
+        <a class="nav-link" href="#AdvancedSearch" data-toggle="modal">Advanced Search</a>
+      </li>
+
+      <li class="nav-item pl-2">
+      <%= search_form_for @q, :html => { :class => 'navbar-search form-inline float-right', :id => 'quick_search'}   do |f| %>
+            <%= f.search_field search_field, :class => 'form-control', :placeholder => "Quick Search" %>
+
+            <button type="button" class="close pl-1" aria-label="Close">
+              <span aria-hidden="true"
+                    onclick="document.getElementById('q_<%=search_field%>').value='';"
+                    ondblclick="document.getElementById('q_<%=search_field%>').value='';
+                        document.getElementById('quick_search').submit();">
+                &times;
+              </span>
+            </button>
+        <% end %>
+      </li>
+  <% end %>
+
+</ul>
+&nbsp;
