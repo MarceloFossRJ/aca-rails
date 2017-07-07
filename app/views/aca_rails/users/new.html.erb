@@ -1,0 +1,25 @@
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "New User"} %>
+
+<%= render partial: 'layouts/aca_rails/tabs', locals: {controller_class: controller_name , action: "new", search_field:""} %>
+
+<div class="form-element-align">
+
+  <%= simple_form_for @user, :html => { :class => 'form-group' } do |f| %>
+      <%= f.input :name %>
+      <%= f.input :login %>
+      <%= f.input :email %>
+      <%= f.input :password %>
+      <%= f.input :password_confirmation %>
+      <%= f.input :is_admin %>
+      <%= f.input :is_active %>
+      <div class="form-actions">
+        <%= f.button :submit, :class => 'btn-primary' %>
+        <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                    users_path, :class => 'btn btn-warning' %>
+        <%= link_to 'Back', users_path, :class => 'btn btn-secondary' %>
+
+      </div>
+  <% end %>
+
+</div>
+
