@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = AcaRails::VERSION
   s.authors     = ["marcelofossrj"]
   s.email       = ["marcelo.foss.rj@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of AcaRails."
-  s.description = "TODO: Description of AcaRails."
+  s.homepage    = "http://github/marcelofossrj"
+  s.summary     = "AcaRails: Access Control Application gem for RoR."
+  s.description = "A role based authentication and authorization gem for RoR"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
@@ -19,4 +19,11 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 5.0.4"
 
   s.add_development_dependency "sqlite3"
+
+  s.add_dependency "rspec-rails", "~> 3.6.0"
+  s.add_dependency "capybara", "~> 2.14.4"
+  s.add_dependency "factory_girl_rails", "~> 4.8.0"
+  s.add_dependency "shoulda", "~> 3.5.0"
+  s.add_dependency "database_cleaner", "~> 1.6.1"
+  s.add_dependency "cucumber-rails", "~> 1.5.0"
 end
