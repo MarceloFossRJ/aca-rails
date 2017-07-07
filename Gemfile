@@ -15,6 +15,9 @@ gemspec
 
 gem "simple_form", "~> 3.5.0"
 gem "paper_trail", "~> 7.0.3"
+gem "ransack", "~> 1.8.3"
+gem "kaminari", "~>1.0.1"
+gem "bcrypt", "~>3.1.11"
 
 group :development, :test do
   gem "rspec-rails", "~> 3.6.0"
@@ -25,5 +28,5 @@ group :test do
   gem "database_cleaner", "~> 1.6.1"
   gem "capybara", "~> 2.14.4"
   gem "cucumber-rails", "~> 1.5.0", require: false
-  gem "simplecov", "~> 0.14.1"
+  gem "simplecov", "~> 0.14.1", require: false
 end

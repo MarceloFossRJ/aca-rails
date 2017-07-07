@@ -26,4 +26,9 @@ Gem::Specification.new do |s|
   s.add_dependency "shoulda", "~> 3.5.0"
   s.add_dependency "database_cleaner", "~> 1.6.1"
   s.add_dependency "cucumber-rails", "~> 1.5.0"
+
+  s.add_dependency "ransack", "~> 1.8.3"
+  s.add_dependency "kaminari", "~>1.0.1"
+  s.add_dependency "bcrypt", "~>3.1.11"
+
 end
