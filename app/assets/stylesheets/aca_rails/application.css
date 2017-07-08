@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require aca_rails/bootstrap
+ *= require aca_rails/font-awesome-4.7.0/css/font-awesome.min
  *= require_self
  */
 body {

@@ -55,9 +55,21 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= link_to 'Show', user, :class => 'btn btn-secondary btn-sm' %></td>
-        <td><%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-primary btn-sm' %></td>
-        <td><%= link_to 'Destroy', user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %></td>
+        <td>
+          <%= link_to user, :class => 'btn btn-secondary btn-sm' do%>
+              <i class="fa fa-eye-slash"></i> Show
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_user_path(user), :class => 'btn btn-primary btn-sm' do%>
+              <i class="fa fa-edit"></i> Edit
+          <% end %>
+         </td>
+        <td>
+          <%= link_to user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' do %>
+            <i class="fa fa-trash-o"></i> Destroy
+          <% end %>
+        </td>
         <td><%= user.name %></td>
         <td><%= user.login %></td>
         <td><%= user.email %></td>
