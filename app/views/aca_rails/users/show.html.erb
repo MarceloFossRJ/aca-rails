@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "Show User"} %>
+
+<%= render partial: 'layouts/aca_rails/tabs', locals: {controller_class: controller_name , action: "show", search_field:"name_cont"} %>
 
 <p>
   <strong>Name:</strong>
@@ -45,5 +47,8 @@
   <%= @user.login_attempts %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+<div class="form-actions">
+  <%= link_to 'Back',
+              users_path, :class => 'btn btn-warning' %>
+</div>

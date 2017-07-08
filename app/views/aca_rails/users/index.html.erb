@@ -36,8 +36,8 @@
 
 
 
-<div class="form-element-align">
-  <table class="table table-responsive table-striped table-hover table-sm table-bordered">
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-sm table-bordered">
     <thead>
     <tr>
       <th colspan="3"></th>
@@ -57,7 +57,7 @@
       <tr>
         <td><%= link_to 'Show', user, :class => 'btn btn-secondary btn-sm' %></td>
         <td><%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-primary btn-sm' %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %></td>
+        <td><%= link_to 'Destroy', user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %></td>
         <td><%= user.name %></td>
         <td><%= user.login %></td>
         <td><%= user.email %></td>
@@ -70,7 +70,7 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= paginate @users, views_prefix: 'aca_rails' %>

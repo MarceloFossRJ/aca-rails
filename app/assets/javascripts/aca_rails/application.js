@@ -11,5 +11,6 @@
 // about supported directives.
 //
 //= require aca_rails/jquery-3.2.1.min
+//= require aca_rails/rails
 //= require_tree .
 //= require aca_rails/bootstrap
