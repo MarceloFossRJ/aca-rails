@@ -15,7 +15,7 @@
   end
 %>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs flex-wrap">
   <li class="nav-item" >
       <%= link_to "Index", {controller: controller_class , action: "index"}, class: classe_index %>
   </li>
@@ -38,11 +38,12 @@
 
 
   <% if action=="index" %>
-      <li class="nav-item pl-5 ml-5">
+
+      <li class="nav-item ml-auto">
         <a class="nav-link" href="#AdvancedSearch" data-toggle="modal">Advanced Search</a>
       </li>
 
-      <li class="nav-item pl-2">
+      <li class="nav-item">
       <%= search_form_for @q, :html => { :class => 'navbar-search form-inline float-right', :id => 'quick_search'}   do |f| %>
             <%= f.search_field search_field, :class => 'form-control', :placeholder => "Quick Search" %>
 
