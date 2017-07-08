@@ -66,7 +66,7 @@ module AcaRails
 
       # Only allow a trusted parameter "white list" through.
       def user_params
-        params.require(:user).permit(:name, :login, :email, :password_digest, :is_admin, :is_active, :last_login, :last_ip, :login_attempts)
+        params.require(:user).permit(:name, :login, :email, :password, :password_confirmation, :is_admin, :is_active, :last_login, :last_ip, :login_attempts)
       end
 
       def sort_column

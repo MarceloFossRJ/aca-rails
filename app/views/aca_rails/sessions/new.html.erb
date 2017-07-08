@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-1 col-md-4"></div>
+  <div class="col-xs-10 col-md-4">
+
+    <div class="page-header">
+      <h1>ACA-Rails&nbsp;
+        <small>Login</small>
+      </h1>
+    </div>
+
+    <%= simple_form_for :login, :url => { :action => "create"}, :html => { :class => 'form-group' } do |f| %>
+        <%= f.input :email, placeholder: 'user@domain.com', required: false %>
+        <%= f.input :password, placeholder: 'password', required: false %>
+
+        <div class="span6 offset2">
+          <div class="control-group">
+            <div class="text-center controls">
+              <%= f.button :submit, :class => 'btn-primary', :value => 'Login' %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+  <div class="col-xs-1 col-md-4"></div>
+</div>

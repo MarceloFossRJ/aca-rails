@@ -1,0 +1,12 @@
+
+
+  <%= link_to link_to_show, :class => 'btn btn-secondary btn-sm', title: "Show", data: { toggle: 'tooltip', placement: 'top' } do%>
+      <i class="fa fa-eye-slash"></i>
+  <% end %>
+  <%= link_to link_to_edit, :class => 'btn btn-primary btn-sm', title: "Edit", data: { toggle: 'tooltip', placement: 'top' } do%>
+      <i class="fa fa-edit"></i>
+  <% end %>
+  <%= link_to link_to_delete, method: :delete, title: "Delete", data: { confirm: 'Are you sure?', toggle: 'tooltip', placement: 'top' }, :class => 'btn btn-danger btn-sm' do %>
+      <i class="fa fa-trash-o"></i>
+  <% end %>
+

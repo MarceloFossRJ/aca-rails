@@ -13,4 +13,9 @@
 //= require aca_rails/jquery-3.2.1.min
 //= require aca_rails/rails
 //= require_tree .
-//= require aca_rails/bootstrap
+//= require aca_rails/tether.min
+//= require aca_rails/bootstrap.min
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
