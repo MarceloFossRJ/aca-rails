@@ -33,6 +33,7 @@
           <a class="dropdown-item" href="<%= users_path %>">User management</a>
           <a class="dropdown-item" href="#">Reset password</a>
           <a class="dropdown-item" href="#">Preferences</a>
+          <a class="dropdown-item" href="#">Activate/De-Activate</a>
         </div>
       </li>
     <% end %>
@@ -42,7 +43,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="UserDropdown">
           <a class="dropdown-item" href="<%= edit_changepwd_path(current_user.id) %>">Change password</a>
-          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="<%= edit_user_path(current_user) %>">Profile</a>
         </div>
       </li>
       <li class="nav-item">
