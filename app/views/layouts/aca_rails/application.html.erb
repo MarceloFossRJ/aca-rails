@@ -41,13 +41,23 @@
           <i class="fa fa-user"></i> <%= current_user.name %>
         </a>
         <div class="dropdown-menu" aria-labelledby="UserDropdown">
-          <a class="dropdown-item" href="#">Change password</a>
+          <a class="dropdown-item" href="<%= edit_changepwd_path(current_user.id) %>">Change password</a>
           <a class="dropdown-item" href="#">Profile</a>
         </div>
       </li>
       <li class="nav-item">
         <%= link_to logout_path(current_user), method: :destroy, title: "Logout", data: { toggle: 'tooltip', placement: 'botton' }, :class => 'nav-link' do %>
             <i class="fa fa-sign-out"></i>
+        <% end %>
+      </li>
+  <% else %>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to login_path, title: "Login", data: { toggle: 'tooltip', placement: 'botton' }, :class => 'nav-link' do %>
+            <i class="fa fa-sign-in"></i> Login
         <% end %>
       </li>
   <% end %>

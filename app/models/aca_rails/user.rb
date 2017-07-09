@@ -9,7 +9,7 @@ module AcaRails
     validates :login, presence: true, uniqueness: true, length: { in: 3..25 }
     validates :email, presence: true, uniqueness: true, format: { with: /\A[^@]+@[^@]+\z/,
                                                                   message: "Invalid Email" }
-    validates :password, presence: true, confirmation: true, length: { in: 4..25 }, on: :create
+    validates :password, presence: true, confirmation: true, length: { in: 4..25 }, if: :should_validate_password? #on: :create
 
     def should_validate_password?
       updating_password || new_record?

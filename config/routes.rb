@@ -12,4 +12,5 @@ AcaRails::Engine.routes.draw do
     collection { get :versions }
   end
 
+  resources :changepwds
 end
