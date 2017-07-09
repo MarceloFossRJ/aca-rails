@@ -1,4 +1,17 @@
 module AcaRails
+  class << self
+    mattr_accessor :app_name
+    self.app_name = "App Name"
+
+    mattr_accessor :records_per_page
+    self.records_per_page = 5
+  end
+
+  # this function maps the vars from your app into your engine
+  def self.setup
+    yield self
+  end
+
   class Engine < ::Rails::Engine
     isolate_namespace AcaRails
 
@@ -12,6 +25,8 @@ module AcaRails
       g.test_framework :rspec, :fixture => false
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
+
+
 
   end
 end

@@ -12,7 +12,7 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">ACA-Rails</a>
+  <a class="navbar-brand" href="#"> <%= AcaRails.app_name %> </a>
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
@@ -31,9 +31,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="AdminDropdown">
           <a class="dropdown-item" href="<%= users_path %>">User management</a>
+          <a class="dropdown-item" href="#">Activate/De-Activate</a>
           <a class="dropdown-item" href="#">Reset password</a>
           <a class="dropdown-item" href="#">Preferences</a>
-          <a class="dropdown-item" href="#">Activate/De-Activate</a>
         </div>
       </li>
     <% end %>
