@@ -1,0 +1,29 @@
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "My Profile"} %>
+
+<div class="form-element-align">
+  <%= simple_form_for @user, :url => my_profile_path, :method => :put, :html => { :class => 'form-group' } do |f| %>
+      <%= f.input :name %>
+      <%= f.input :login %>
+      <%= f.input :email %>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-sm table-bordered">
+          <tbody>
+              <tr>
+                <td>Is Admin</td>
+                <td><%= @user.is_admin %></td>
+              </tr>
+              <tr>
+                <td>Last login</td>
+                <td><%= @user.last_login %></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+
+      <div class="form-actions">
+        <%= f.button :submit, :class => 'btn btn-primary' %>
+      </div>
+  <% end %>
+</div>

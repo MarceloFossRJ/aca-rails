@@ -13,4 +13,6 @@ AcaRails::Engine.routes.draw do
   end
 
   resources :changepwds
+
+  resources :my_profile
 end
