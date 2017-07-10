@@ -12,7 +12,7 @@ module AcaRails
       end
       flash[:warning]='Please login to continue'
       session[:return_to] = request.url
-      redirect_to new_session_path
+      redirect_to login_path
       return false
     end
 

@@ -4,6 +4,8 @@ module AcaRails
   class UsersController < ApplicationController
     before_action :set_user, only: [:show, :edit, :update, :destroy]
     before_action :user_can_be_deleted, only: [:destroy]
+    before_filter :login_required
+    before_filter :admin_required
 
     # GET /users
     def index

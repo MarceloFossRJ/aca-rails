@@ -9,12 +9,6 @@ module AcaRails
     mattr_accessor :number_wrong_login_attempts
     self.number_wrong_login_attempts = 5
 
-    mattr_accessor :expire_session_per_time
-    self.expire_session_per_time = true
-
-    mattr_accessor :minutes_to_expire_session
-    self.minutes_to_expire_session = 180
-
     mattr_accessor :unlock_account_per_time
     self.unlock_account_per_time = true
 
@@ -33,6 +27,12 @@ module AcaRails
     mattr_accessor :user_can_have_account_deleted
     self.user_can_have_account_deleted = false
 ##
+    mattr_accessor :expire_session_per_time
+    self.expire_session_per_time = true
+
+    mattr_accessor :minutes_to_expire_session
+    self.minutes_to_expire_session = 180
+
     mattr_accessor :use_paper_trail
     self.use_paper_trail = true
 

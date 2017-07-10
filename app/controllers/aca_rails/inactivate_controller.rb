@@ -4,8 +4,8 @@ module AcaRails
   class InactivateController < ApplicationController
 
     before_action :user_can_inactivate, only: [:edit, :update]
-
     before_action :user_can_delete, only: [:destroy]
+    before_filter :login_required
 
     def edit
       @user = current_user

@@ -2,6 +2,8 @@ require_dependency "aca_rails/application_controller"
 
 module AcaRails
   class ChangepwdsController < ApplicationController
+    before_filter :login_required
+
     def edit
       @user = current_user
     end
