@@ -52,9 +52,11 @@
         <% end %>
       </li>
   <% else %>
+      <% if AcaRails.user_can_signup %>
       <li class="nav-item">
         <a class="nav-link" href="<%= signup_path %>">Sign Up</a>
       </li>
+      <% end %>
 
       <li class="nav-item">
         <%= link_to login_path, title: "Login", data: { toggle: 'tooltip', placement: 'botton' }, :class => 'nav-link' do %>

@@ -2,7 +2,9 @@ require_dependency "aca_rails/application_controller"
 
 module AcaRails
   class SignupController < ApplicationController
-    # GET /users/new
+
+    before_action :user_can_signup
+
     def new
       @user = User.new
     end
