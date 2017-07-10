@@ -43,11 +43,7 @@ module AcaRails
     end
 
     def destroy
-      session[:uid] = nil
-      session[:lgtm] = nil
-      session[:cip] = nil
-
-      cookies.delete(:auth_token)
+      kill_session
 
       redirect_to login_path, :notice => "You have logged out!"
     end

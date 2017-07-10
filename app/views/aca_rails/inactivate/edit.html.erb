@@ -1,0 +1,32 @@
+<% if AcaRails.user_can_inactivate_account %>
+  <%= render partial: 'layouts/aca_rails/header', locals: {title: "Inactivate account"} %>
+
+  <div class="form-element-align">
+    <%= simple_form_for @user, :url => inactivate_path, :method => :put, :html => { :class => 'form-group' } do |f| %>
+      <p>To inactivate your account, first uncheck the box, and then click the Inactivate button.</p>
+      <%= f.input :is_active %>
+
+      <div class="form-actions">
+        <%= f.button :submit, :class => 'btn btn-primary', :value => 'Inactivate' %>
+      </div>
+    <% end %>
+  </div>
+  <br>
+<% end %>
+
+<% if AcaRails.user_can_delete_account %>
+  <%= render partial: 'layouts/aca_rails/header', locals: {title: "Remove account"} %>
+
+  <div class="form-element-align">
+    <p>PAY ATTENTION: This action cannot be undone!</p>
+    <p>Your user account will be permanently deleted.</p>
+    <div class="form-actions">
+      <%= link_to inactivate_path, method: :delete, data: { confirm: 'Are you sure?'}, :class => 'btn btn-danger' do %>
+        <i class="fa fa-user-times"></i>&nbsp; Remove Account
+      <% end %>
+    </div>
+  </div>
+<% end %>
+    <br>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+              root_url, :class => 'btn btn-warning' %>

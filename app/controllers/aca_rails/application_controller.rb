@@ -2,7 +2,9 @@ module AcaRails
   class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
 
-    before_action :set_paper_trail_whodunnit
+    if AcaRails.use_paper_trail
+      before_action :set_paper_trail_whodunnit
+    end
 
     def login_required
       if session[:uid]
@@ -32,11 +34,48 @@ module AcaRails
       end
     end
 
+    def user_can_inactivate
+      if AcaRails.user_can_inactivate_account
+        return true
+      else
+        return method_not_allowed
+      end
+    end
+
+    def user_can_delete
+      if AcaRails.user_can_delete_account
+        return true
+      else
+        return method_not_allowed
+      end
+    end
+
+    def user_can_be_deleted
+      if AcaRails.user_can_have_account_deleted
+        return true
+      else
+        return method_not_allowed
+      end
+    end
+
+    def kill_session
+      session[:uid] = nil
+      session[:lgtm] = nil
+      session[:cip] = nil
+
+      cookies.delete(:auth_token)
+    end
+
     private
 
     def current_user
-      @current_user ||= User.find(session[:uid]) if session[:uid]
-      #@current_user ||= User.find_by_auth_token( cookies[:auth_token]) if cookies[:auth_token]
+      if session[:uid]
+        @current_user ||= User.find(session[:uid])
+      else
+        @current_user = nil
+      end
+
+      #@current_user ||= User.find_by_auth_token( cookies[:auth_token]) if cookies[:auth_token
     end
 
     helper_method :current_user

@@ -55,7 +55,11 @@
     <% @users.each do |user| %>
       <tr>
         <td>
-          <%= render partial: 'layouts/aca_rails/actions', locals: {link_to_show: user_path(user) , link_to_edit: edit_user_path(user) , link_to_delete: user_path(user)} %>
+          <% if AcaRails.user_can_have_account_deleted %>
+            <%= render partial: 'layouts/aca_rails/actions', locals: {link_to_show: user_path(user) , link_to_edit: edit_user_path(user) , link_to_delete: user_path(user)} %>
+          <% else %>
+              <%= render partial: 'layouts/aca_rails/actions', locals: {link_to_show: user_path(user) , link_to_edit: edit_user_path(user) , link_to_delete: nil} %>
+          <% end %>
         </td>
         <td><%= user.name %></td>
         <td><%= user.login %></td>

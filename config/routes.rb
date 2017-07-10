@@ -1,10 +1,10 @@
 AcaRails::Engine.routes.draw do
 
   root :to => "home#index"
-  get 'home/index'
+  get '/home/index'
   get '/locked' => 'home#locked'
 
-  post "/logout" => "sessions#destroy", :as => "logout"
+  get "/logout" => "sessions#destroy", :as => "logout"
   get "/login" => "sessions#new", :as => "login"
   post "/login" => "sessions#create"
 
@@ -14,16 +14,16 @@ AcaRails::Engine.routes.draw do
   end
 
   resources :changepwds
-
   resources :my_profile
+  resources :inactivate
 
   get '/signup' => 'signup#new'
   post '/signup' => 'signup#create'
 
-  #get "/401", to: "errors#unauthorized"
-  #get "/403", to: "errors#forbidden"
-  #get "/404", to: "errors#not_found"
-  #get "/405", to: "errors#method_not_allowed"
-  #get "/500", to: "errors#server_error"
+  get "/401", to: "errors#unauthorized"
+  get "/403", to: "errors#forbidden"
+  get "/404", to: "errors#not_found"
+  get "/405", to: "errors#method_not_allowed"
+  get "/500", to: "errors#server_error"
 
 end

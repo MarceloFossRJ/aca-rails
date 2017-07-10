@@ -23,16 +23,25 @@ module AcaRails
 
     mattr_accessor :user_can_signup
     self.user_can_signup = false
-##
+
     mattr_accessor :user_can_inactivate_account
     self.user_can_inactivate_account = true
 
     mattr_accessor :user_can_delete_account
-    self.user_can_delete_account = true
+    self.user_can_delete_account = false
 
-    mattr_accessor :user_can_be_deleted
-    self.user_can_be_deleted = true
+    mattr_accessor :user_can_have_account_deleted
+    self.user_can_have_account_deleted = false
+##
+    mattr_accessor :use_paper_trail
+    self.use_paper_trail = true
 
+    mattr_accessor :user_confirm_signup_by_email
+    self.user_confirm_signup_by_email = true
+
+    #user can use email or login field to login in the system
+    mattr_accessor :use_email_to_authenticate
+    self.use_email_to_authenticate = true
   end
 
   # this function maps the vars from your app into your engine

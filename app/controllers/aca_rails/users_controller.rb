@@ -3,6 +3,7 @@ require_dependency "aca_rails/application_controller"
 module AcaRails
   class UsersController < ApplicationController
     before_action :set_user, only: [:show, :edit, :update, :destroy]
+    before_action :user_can_be_deleted, only: [:destroy]
 
     # GET /users
     def index
