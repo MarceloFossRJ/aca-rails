@@ -45,7 +45,7 @@
       <th><%= sort_link @q, :email, "Email" %></th>
       <th><%= sort_link @q, :is_admin, "Is Admin" %></th>
       <th><%= sort_link @q, :is_active, "Is Active" %></th>
-      <th><%= sort_link @q, :login_attempts, "Login attempts" %></th>
+      <th><%= sort_link @q, :is_locked, "Is Locked" %></th>
       <th><%= sort_link @q, :last_login, "Last login" %></th>
       <th>Last ip</th>
     </tr>
@@ -62,7 +62,7 @@
         <td><%= user.email %></td>
         <td><%= user.is_admin %></td>
         <td><%= user.is_active %></td>
-        <td><%= user.login_attempts %></td>
+        <td><%= user.is_locked %></td>
         <td><%= user.last_login %></td>
         <td><%= user.last_ip %></td>
       </tr>

@@ -2,6 +2,7 @@ AcaRails::Engine.routes.draw do
 
   root :to => "home#index"
   get 'home/index'
+  get '/locked' => 'home#locked'
 
   post "/logout" => "sessions#destroy", :as => "logout"
   get "/login" => "sessions#new", :as => "login"

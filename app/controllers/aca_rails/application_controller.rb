@@ -23,5 +23,6 @@ module AcaRails
 
     helper_method :current_user
 
+
   end
 end

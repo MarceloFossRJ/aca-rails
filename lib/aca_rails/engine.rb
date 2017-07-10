@@ -5,6 +5,9 @@ module AcaRails
 
     mattr_accessor :records_per_page
     self.records_per_page = 5
+
+    mattr_accessor :number_wrong_login_attempts
+    self.number_wrong_login_attempts = 5
   end
 
   # this function maps the vars from your app into your engine

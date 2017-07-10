@@ -9,12 +9,31 @@
       <%= f.input :email %>
       <%= f.input :is_admin %>
       <%= f.input :is_active %>
-      <%= f.input :login_attempts %>
 
       <div class="form-actions">
         <%= f.button :submit, :class => 'btn btn-primary' %>
         <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                     users_path, :class => 'btn btn-warning' %>
       </div>
+      <br>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-sm table-bordered">
+          <tbody>
+          <tr>
+            <td>Is Locked?</td>
+            <td><%= @user.is_locked %></td>
+          </tr>
+          <tr>
+            <td>Last IP</td>
+            <td><%= @user.last_ip %></td>
+          </tr>
+          <tr>
+            <td>Last login</td>
+            <td><%= @user.last_login %></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
   <% end %>
 </div>
