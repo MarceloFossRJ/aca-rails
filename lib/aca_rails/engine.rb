@@ -20,6 +20,19 @@ module AcaRails
 
     mattr_accessor :minutes_account_blocked
     self.minutes_account_blocked = 60
+##
+    mattr_accessor :user_can_signup
+    self.user_can_signup = true
+
+    mattr_accessor :user_can_inactivate_account
+    self.user_can_inactivate_account = true
+
+    mattr_accessor :user_can_delete_account
+    self.user_can_delete_account = true
+
+    mattr_accessor :user_can_be_deleted
+    self.user_can_be_deleted = true
+
   end
 
   # this function maps the vars from your app into your engine

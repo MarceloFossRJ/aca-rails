@@ -16,4 +16,8 @@ AcaRails::Engine.routes.draw do
   resources :changepwds
 
   resources :my_profile
+
+  get '/signup' => 'signup#new'
+  post '/signup' => 'signup#create'
+
 end

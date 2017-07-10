@@ -12,7 +12,7 @@ module AcaRails
     validates :password, presence: true, confirmation: true, length: { in: 4..25 }, if: :should_validate_password? #on: :create
 
     def aca_authenticate(pwd, ip)
-      if AcaRails.unlock_account_per_time?
+      if AcaRails.unlock_account_per_time
         if self.is_locked?
           if Time.now - AcaRails.minutes_account_blocked.minutes > self.locked_at.to_datetime
             self.update_column(:is_locked, false)

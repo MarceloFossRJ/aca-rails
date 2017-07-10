@@ -15,7 +15,7 @@
         <tr>
           <td><%= version.id %></td>
           <td><%= version.event %></td>
-          <td><%= version.user.login if version.whodunnit %></td>
+          <td><%= version.user %></td>
           <td><%= version.created_at.strftime("%d/%m/%Y %H:%M") %></td>
           <td><%= version.object %></td>
         </tr>
