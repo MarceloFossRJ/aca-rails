@@ -2,6 +2,7 @@ require_dependency "aca_rails/application_controller"
 
 module AcaRails
   class SessionsController < ApplicationController
+
     def new
       session[:uid] = nil
       session[:lgtm] = nil
