@@ -8,6 +8,18 @@ module AcaRails
 
     mattr_accessor :number_wrong_login_attempts
     self.number_wrong_login_attempts = 5
+
+    mattr_accessor :expire_session_per_time
+    self.expire_session_per_time = true
+
+    mattr_accessor :minutes_to_expire_session
+    self.minutes_to_expire_session = 180
+
+    mattr_accessor :unlock_account_per_time
+    self.unlock_account_per_time = true
+
+    mattr_accessor :minutes_account_blocked
+    self.minutes_account_blocked = 60
   end
 
   # this function maps the vars from your app into your engine
