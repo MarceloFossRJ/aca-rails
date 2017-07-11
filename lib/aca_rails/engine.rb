@@ -31,7 +31,10 @@ module AcaRails
     self.expire_session_per_time = true
 
     mattr_accessor :minutes_to_expire_session
-    self.minutes_to_expire_session = 5
+    self.minutes_to_expire_session = 60
+
+    mattr_accessor :use_remember_me
+    self.use_remember_me = true
 ##
     mattr_accessor :use_paper_trail
     self.use_paper_trail = true

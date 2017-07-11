@@ -96,7 +96,9 @@ module AcaRails
     private
 
     def current_user
-      if session[:uid]
+      if cookies[:auth_token]
+        @current_user ||= User.find_by_auth_token( cookies[:auth_token])
+      elsif session[:uid]
         @current_user ||= User.find(session[:uid])
       else
         @current_user = nil

@@ -5,7 +5,7 @@ PaperTrail::Version.class_eval do
     begin
       AcaRails::User.find(whodunnit).login if whodunnit
     rescue
-      whodunnit
+      self.whodunnit
     end
 
   end

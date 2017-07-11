@@ -2,6 +2,7 @@ module AcaRails
   class User < ApplicationRecord
     has_paper_trail class_name: 'AcaRails::UserVersion'
     has_secure_password
+    before_create {generate_token(:auth_token)}
 
     attr_accessor :updating_password
 

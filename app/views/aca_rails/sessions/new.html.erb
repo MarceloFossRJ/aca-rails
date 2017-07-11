@@ -11,6 +11,7 @@
     <%= simple_form_for :login, :url => { :action => "create"}, :html => { :class => 'form-group' } do |f| %>
         <%= f.input :email, placeholder: 'user@domain.com', required: false %>
         <%= f.input :password, placeholder: 'password', required: false %>
+        <%= f.input :remember_me, inline_label: 'Remember me', input_html: { value: '1', type: 'checkbox'}, required: false %>
 
         <div class="span6 offset2">
           <div class="control-group">
