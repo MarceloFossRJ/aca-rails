@@ -16,7 +16,7 @@ module AcaRails
     self.minutes_account_blocked = 60
 
     mattr_accessor :user_can_signup
-    self.user_can_signup = false
+    self.user_can_signup = true
 
     mattr_accessor :user_can_inactivate_account
     self.user_can_inactivate_account = true
@@ -41,10 +41,16 @@ module AcaRails
 
     mattr_accessor :use_remember_me
     self.use_remember_me = true
-##
+
+    mattr_accessor :send_welcome_email
+    self.send_welcome_email = true
+
     mattr_accessor :user_confirm_signup_by_email
     self.user_confirm_signup_by_email = true
 
+    mattr_accessor :hours_to_expire_signup_confirmation
+    self.hours_to_expire_signup_confirmation = 48
+##
     mattr_accessor :use_paper_trail
     self.use_paper_trail = true
 

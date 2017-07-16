@@ -3,6 +3,7 @@ module AcaRails
     has_paper_trail class_name: 'AcaRails::UserVersion'
     has_secure_password
     before_create {generate_token(:auth_token)}
+    after_create :send_emails
 
     attr_accessor :updating_password
 
@@ -18,6 +19,12 @@ module AcaRails
           if Time.now - AcaRails.minutes_account_blocked.minutes > self.locked_at.to_datetime
             self.update_column(:is_locked, false)
           end
+        end
+      end
+
+      if AcaRails.user_confirm_signup_by_email
+        if !self.is_email_confirmed? && self.email_confirmation_send_at < AcaRails.hours_to_expire_signup_confirmation.to_i.hours.ago
+          return false
         end
       end
 
@@ -64,6 +71,27 @@ module AcaRails
       self.password_reset_sent_at = Time.zone.now
       save!
       UserMailer.password_reset(self).deliver
+    end
+
+    def send_emails
+      if AcaRails.send_welcome_email
+        UserMailer.welcome_email(self).deliver
+        self.welcome_mail_send_at = Time.zone.now
+        save!
+      end
+      if AcaRails.user_confirm_signup_by_email
+        UserMailer.signup_confirmation(self).deliver
+        self.email_confirmation_send_at = Time.zone.now
+        self.is_email_confirmed = false
+        save!
+      end
+    end
+
+    def confirm_email
+      if AcaRails.user_confirm_signup_by_email
+        self.is_email_confirmed = true
+        save!
+      end
     end
 
   end

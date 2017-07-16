@@ -19,6 +19,9 @@ AcaRails::Engine.routes.draw do
 
   get '/signup' => 'signup#new'
   post '/signup' => 'signup#create'
+  get '/signup/:id/edit' => 'signup#edit', as: :confirm_email
+  put '/signup/:id' => 'signup#update'
+  patch '/signup/:id' => 'signup#update'
 
   get "/401", to: "errors#unauthorized"
   get "/403", to: "errors#forbidden"

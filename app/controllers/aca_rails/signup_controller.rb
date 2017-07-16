@@ -23,6 +23,13 @@ module AcaRails
       end
     end
 
+    def edit
+      @user = User.find(params[:id])
+      if @user
+        @user.confirm_email
+      end
+    end
+
     private
     # Only allow a trusted parameter "white list" through.
     def user_params

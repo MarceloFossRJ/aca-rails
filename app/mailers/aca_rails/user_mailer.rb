@@ -12,5 +12,15 @@ module AcaRails
       @user = user
       mail :to => user.email, :subject => "Reset your password"
     end
+
+    def welcome_email(user)
+      @user = user
+      mail to: user.email, subject: "Welcome to #{AcaRails.app_name}"
+    end
+
+    def signup_confirmation(user)
+      @user = user
+      mail to: user.email, subject: "#{AcaRails.app_name} signup confirmation"
+    end
   end
 end

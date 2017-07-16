@@ -26,6 +26,9 @@ module AcaRails
           if user && (user.is_locked? || !user.is_active?)
             flash[:error] = "Account is blocked, contact system admin."
             redirect_to locked_path
+          elsif user && !user.is_email_confirmed? && AcaRails.user_confirm_signup_by_email
+            flash[:error] = "Please confirm your email."
+            redirect_to login_path
           else
             flash[:error] = "Invalid email/login or password"
 

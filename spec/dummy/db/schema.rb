@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170711120653) do
+ActiveRecord::Schema.define(version: 20170716042005) do
 
   create_table "aca_rails_user_versions", force: :cascade do |t|
     t.string   "item_type",                     null: false
@@ -32,13 +32,16 @@ ActiveRecord::Schema.define(version: 20170711120653) do
     t.datetime "last_login"
     t.string   "last_ip"
     t.integer  "login_attempts"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.boolean  "is_locked"
     t.datetime "locked_at"
     t.string   "auth_token"
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
+    t.datetime "welcome_mail_send_at"
+    t.datetime "email_confirmation_send_at"
+    t.boolean  "is_email_confirmed"
   end
 
 end
