@@ -11,7 +11,10 @@
     <%= simple_form_for :login, :url => { :action => "create"}, :html => { :class => 'form-group' } do |f| %>
         <%= f.input :email, placeholder: 'user@domain.com', required: false %>
         <%= f.input :password, placeholder: 'password', required: false %>
+
+        <% if AcaRails.use_remember_me %>
         <%= f.input :remember_me, inline_label: 'Remember me', input_html: { value: '1', type: 'checkbox'}, required: false %>
+        <% end %>
 
         <div class="span6 offset2">
           <div class="control-group">
@@ -21,6 +24,11 @@
           </div>
         </div>
     <% end %>
+
+    <% if AcaRails.use_forgotten_password %>
+      <p class="text-center"><%= link_to "forgotten password?", new_password_reset_path %></p>
+    <% end %>
+
   </div>
   <div class="col-xs-1 col-md-4"></div>
 </div>

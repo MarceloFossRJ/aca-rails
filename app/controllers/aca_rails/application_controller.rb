@@ -62,6 +62,14 @@ module AcaRails
       end
     end
 
+    def use_forgotten_pwd
+      if AcaRails.use_forgotten_password
+        return true
+      else
+        return method_not_allowed
+      end
+    end
+
     def kill_session
       session[:uid] = nil
       session[:lgtm] = nil

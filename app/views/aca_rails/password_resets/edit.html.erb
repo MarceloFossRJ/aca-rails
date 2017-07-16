@@ -1,0 +1,29 @@
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "Reset password"} %>
+<br>
+<div class="form-element-align">
+<%= form_for @user, :url => password_reset_path(params[:id]) do |f| %>
+    <% if @user.errors.any? %>
+        <div class="error_messages">
+          <h3>Form is invalid</h3>
+          <ul>
+            <% for message in @user.errors.full_messages %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="form-group">
+      <%= f.label :password, :class => "control-label" %>
+      <%= f.password_field :password, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation, :class => "control-label" %>
+      <%= f.password_field :password_confirmation, :class => "form-control" %>
+    </div>
+    <br>
+    <div class="form-actions">
+        <%= f.submit "Reset Password", :class => 'btn btn-primary' %>
+    </div>
+
+<% end %>
+</div>

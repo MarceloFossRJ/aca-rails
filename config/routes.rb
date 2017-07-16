@@ -8,7 +8,6 @@ AcaRails::Engine.routes.draw do
   get "/login" => "sessions#new", :as => "login"
   post "/login" => "sessions#create"
 
-
   resources :users do
     collection { get :versions }
   end
@@ -16,6 +15,7 @@ AcaRails::Engine.routes.draw do
   resources :changepwds
   resources :my_profile
   resources :inactivate
+  resources :password_resets
 
   get '/signup' => 'signup#new'
   post '/signup' => 'signup#create'

@@ -33,14 +33,20 @@ module AcaRails
     mattr_accessor :minutes_to_expire_session
     self.minutes_to_expire_session = 60
 
+    mattr_accessor :use_forgotten_password
+    self.use_forgotten_password = true
+
+    mattr_accessor :default_from_email
+    self.default_from_email = "admin@aca_rails.com"
+
     mattr_accessor :use_remember_me
     self.use_remember_me = true
 ##
-    mattr_accessor :use_paper_trail
-    self.use_paper_trail = true
-
     mattr_accessor :user_confirm_signup_by_email
     self.user_confirm_signup_by_email = true
+
+    mattr_accessor :use_paper_trail
+    self.use_paper_trail = true
 
     #user can use email or login field to login in the system
     mattr_accessor :use_email_to_authenticate
@@ -65,7 +71,6 @@ module AcaRails
       g.test_framework :rspec, :fixture => false
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
-
 
 
   end

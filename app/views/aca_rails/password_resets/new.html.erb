@@ -1,0 +1,17 @@
+<%= render partial: 'layouts/aca_rails/header', locals: {title: "Reset Password"} %>
+<br>
+<div class="form-element-align">
+<%= form_tag password_resets_path, :method => :post do %>
+    <div class="form-group">
+      <%= label_tag :email,nil, :class => "control-label" %>
+      <%= text_field_tag :email, params[:email], :class => "form-control" %>
+    </div>
+    <br>
+    <div class="form-actions">
+      <%= submit_tag "Reset Password", :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  login_path, :class => 'btn btn-warning' %>
+    </div>
+
+<% end %>
+</div>
