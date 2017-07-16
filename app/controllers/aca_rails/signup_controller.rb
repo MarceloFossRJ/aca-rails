@@ -4,6 +4,7 @@ module AcaRails
   class SignupController < ApplicationController
 
     before_action :user_can_signup
+    before_action :user_confirm_email, only: [:edit]
 
     def new
       @user = User.new

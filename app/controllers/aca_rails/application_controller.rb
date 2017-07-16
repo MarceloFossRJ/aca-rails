@@ -70,6 +70,14 @@ module AcaRails
       end
     end
 
+    def user_confirm_email
+      if AcaRails.user_confirm_signup_by_email
+        return true
+      else
+        return method_not_allowed
+      end
+    end
+
     def kill_session
       session[:uid] = nil
       session[:lgtm] = nil
