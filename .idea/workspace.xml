@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="753f8186-d25d-437f-949d-af589564d775" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/aca_rails/_actions.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/aca_rails/_actions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/aca_rails/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/aca_rails/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -63,18 +59,28 @@
       <file leaf-file-name="password_resets_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-235">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_versions.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="57" column="117" lean-forward="false" selection-start-line="57" selection-start-column="117" selection-end-line="57" selection-end-column="117" />
+            <state relative-caret-position="80">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,7 +146,6 @@
         <option value="$PROJECT_DIR$/app/controllers/aca_rails/my_profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/users/index.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/paper_trail.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170711004629_add_auth_token_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170711120653_add_password_reset_to_users.rb" />
         <option value="$PROJECT_DIR$/app/mailers/aca_rails/application_mailer.rb" />
@@ -170,6 +175,7 @@
         <option value="$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_actions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" />
       </list>
     </option>
   </component>
@@ -1083,7 +1089,7 @@
       <updated>1499367472575</updated>
       <workItem from="1499367474041" duration="35000" />
       <workItem from="1499367812220" duration="5913000" />
-      <workItem from="1499388112701" duration="136668000" />
+      <workItem from="1499388112701" duration="137350000" />
     </task>
     <task id="LOCAL-00001" summary="configure test tools">
       <created>1499390612958</created>
@@ -1260,11 +1266,25 @@
       <option name="project" value="LOCAL" />
       <updated>1500293576375</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Implemented rest user password">
+      <created>1500320220419</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1500320220419</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix versions partial error not loading paper_trail user inheritance">
+      <created>1500320821925</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1500320821925</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142616000" />
+    <option name="totallyTimeSpent" value="143298000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1352,8 +1372,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="configure test tools" />
-    <MESSAGE value="paper_trail setup" />
     <MESSAGE value="Implement tab navigation, flash messages and quick search to std scaffold" />
     <MESSAGE value="implemented modal advanced search" />
     <MESSAGE value="modal advanced search layout adjustment" />
@@ -1377,7 +1395,9 @@
     <MESSAGE value="Implemented welcome email and confirmation email" />
     <MESSAGE value="Added control signup by email in controller" />
     <MESSAGE value="fix user column name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix user column name" />
+    <MESSAGE value="Implemented rest user password" />
+    <MESSAGE value="fix versions partial error not loading paper_trail user inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix versions partial error not loading paper_trail user inheritance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1436,14 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1781,18 +1793,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/password_resets_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="57" column="117" lean-forward="false" selection-start-line="57" selection-start-column="117" selection-end-line="57" selection-end-column="117" />
+        <state relative-caret-position="257">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>

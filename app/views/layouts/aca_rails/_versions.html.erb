@@ -18,7 +18,7 @@
           <% begin %>
           <td><%= version.user %></td>
           <% rescue %>
-          <td><%= version.user %></td>
+          <td><%= version.whodunnit %></td>
           <% end %>
           <td><%= version.created_at.strftime("%d/%m/%Y %H:%M") %></td>
           <td><%= version.object %></td>
