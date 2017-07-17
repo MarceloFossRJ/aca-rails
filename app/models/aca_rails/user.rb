@@ -23,8 +23,11 @@ module AcaRails
       end
 
       if AcaRails.user_confirm_signup_by_email
-        if !self.is_email_confirmed? && self.email_confirmation_send_at < AcaRails.hours_to_expire_signup_confirmation.to_i.hours.ago
-          return false
+        x = AcaRails.hours_to_expire_signup_confirmation.to_i
+        if !self.email_confirmation_sent_at.blank?
+          if !self.is_email_confirmed? && self.email_confirmation_sent_at < x.hours.ago
+            return false
+          end
         end
       end
 
@@ -76,12 +79,12 @@ module AcaRails
     def send_emails
       if AcaRails.send_welcome_email
         UserMailer.welcome_email(self).deliver
-        self.welcome_mail_send_at = Time.zone.now
+        self.welcome_mail_sent_at = Time.zone.now
         save!
       end
       if AcaRails.user_confirm_signup_by_email
         UserMailer.signup_confirmation(self).deliver
-        self.email_confirmation_send_at = Time.zone.now
+        self.email_confirmation_sent_at = Time.zone.now
         self.is_email_confirmed = false
         save!
       end

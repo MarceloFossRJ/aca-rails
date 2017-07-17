@@ -3,12 +3,12 @@ module AcaRails
     protect_from_forgery with: :exception
 
     before_filter :update_activity_time
+
     if AcaRails.use_paper_trail
       before_action :set_paper_trail_whodunnit
     end
 
     def login_required
-
       if !session[:uid]
         kill_session
         session[:return_to] = request.url
@@ -22,7 +22,7 @@ module AcaRails
 
     def admin_required
       login_required
-      if current_user.is_admin
+      if current_user
         return true
       else
         return unauthorized
@@ -112,15 +112,15 @@ module AcaRails
     private
 
     def current_user
-      if cookies[:auth_token]
-        @current_user ||= User.find_by_auth_token( cookies[:auth_token])
-      elsif session[:uid]
-        @current_user ||= User.find(session[:uid])
-      else
-        @current_user = nil
-      end
-
-      #@current_user ||= User.find_by_auth_token( cookies[:auth_token]) if cookies[:auth_token
+      #if cookies[:auth_token]
+      #  @current_user ||= User.find_by_auth_token(cookies[:auth_token])
+      #elsif session[:uid]
+      #  @current_user ||= User.find(session[:uid])
+      #else
+      #  @current_user = nil
+      #end
+#      @current_user ||= User.find_by_auth_token(cookies[:auth_token])
+      @current_user ||= User.find(session[:uid]) if session[:uid]
     end
 
     helper_method :current_user

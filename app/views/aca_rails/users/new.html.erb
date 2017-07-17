@@ -5,8 +5,8 @@
 <div class="form-element-align">
 
   <%= simple_form_for @user, :html => { :class => 'form-group' } do |f| %>
-      <%= f.input :name %>
-      <%= f.input :login %>
+      <%= f.input :name, input_html: { maxlength: 120 } %>
+      <%= f.input :login, input_html: { maxlength: 25 } %>
       <%= f.input :email %>
       <%= f.input :password %>
       <%= f.input :password_confirmation %>

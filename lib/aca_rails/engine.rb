@@ -4,7 +4,7 @@ module AcaRails
     self.app_name = "App Name"
 
     mattr_accessor :records_per_page
-    self.records_per_page = 5
+    self.records_per_page = 10
 
     mattr_accessor :number_wrong_login_attempts
     self.number_wrong_login_attempts = 5
