@@ -4,12 +4,19 @@ module AcaRails
   class PasswordResetsController < ApplicationController
     before_action :use_forgotten_pwd, only: [:new, :create, :edit, :update]
 
+    def index
+      @q = User.ransack(params[:q])
+      @users = @q.result(distinct: true).page params[:page]
+    end
+
     def new
 
     end
 
     def create
-      user = User.find_by_email(params[:email])
+      p = params[:email] || params[:user][:email]
+      user = User.find_by_email(p)
+
       if user
         user.send_password_reset
         redirect_to login_path, :notice => "Email sent with password reset instructions."

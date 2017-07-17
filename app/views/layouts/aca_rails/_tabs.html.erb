@@ -16,16 +16,22 @@
 %>
 
 <ul class="nav nav-tabs flex-wrap">
+  <% if !defined?(abas) || abas.include?('index')%>
   <li class="nav-item" >
       <%= link_to "Index", {controller: controller_class , action: "index"}, class: classe_index %>
   </li>
+  <% end %>
+  <% if !defined?(abas) || abas.include?('new')%>
   <li class="nav-item" >
       <%= link_to "New", {controller: controller_class , action: "new"}, class: classe_new %>
   </li>
+  <% end %>
 
+  <% if !defined?(abas) || abas.include?('versions')%>
   <li class="nav-item" >
       <%= link_to "Versions",{controller: controller_class , action: "versions"}, class: classe_versions %>
   </li>
+  <% end %>
 
   <% if action=="edit" or action=="show" %>
       <li class="nav-item">
