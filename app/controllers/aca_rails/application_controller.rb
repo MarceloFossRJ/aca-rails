@@ -120,7 +120,12 @@ module AcaRails
       #  @current_user = nil
       #end
 #      @current_user ||= User.find_by_auth_token(cookies[:auth_token])
-      @current_user ||= User.find(session[:uid]) if session[:uid]
+      begin
+        @current_user ||= User.find(session[:uid]) if session[:uid]
+      rescue
+        kill_session
+      end
+
     end
 
     helper_method :current_user

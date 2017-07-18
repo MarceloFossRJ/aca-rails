@@ -54,7 +54,10 @@ module AcaRails
     end
 
     def versions
-      @versions = UserVersion.all.order('created_at desc').page params[:page]
+      #@versions = UserVersion.all.order('created_at desc').page params[:page]
+      @q = UserVersion.ransack(params[:q])
+      @versions = @q.result(distinct: true).order('id desc').page params[:page]
+
       respond_to do |format|
         format.html # index.html.erb
         format.json { render json: @versions }

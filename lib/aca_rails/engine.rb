@@ -25,7 +25,7 @@ module AcaRails
     self.user_can_delete_account = false
 
     mattr_accessor :user_can_have_account_deleted
-    self.user_can_have_account_deleted = false
+    self.user_can_have_account_deleted = true
 
     mattr_accessor :expire_session_per_time
     self.expire_session_per_time = true

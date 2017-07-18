@@ -10,15 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170717120537) do
+ActiveRecord::Schema.define(version: 20170717202334) do
 
   create_table "aca_rails_user_versions", force: :cascade do |t|
-    t.string   "item_type",                     null: false
-    t.integer  "item_id",                       null: false
-    t.string   "event",                         null: false
+    t.string   "item_type",                         null: false
+    t.integer  "item_id",                           null: false
+    t.string   "event",                             null: false
     t.string   "whodunnit"
-    t.text     "object",     limit: 1073741823
+    t.text     "object",         limit: 1073741823
     t.datetime "created_at"
+    t.string   "object_changes"
     t.index ["item_type", "item_id"], name: "index_aca_rails_user_versions_on_item_type_and_item_id"
   end
 

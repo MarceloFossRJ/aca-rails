@@ -3,25 +3,37 @@
   <table class="table table-striped table-hover table-sm table-bordered">
     <thead>
     <tr>
-      <th>Id</th>
-      <th>Event</th>
-      <th>Who</th>
-      <th>Date</th>
-      <th>Object</th>
+      <th><%= sort_link @q, :id, "Id" %></th>
+      <th><%= sort_link @q, :item_id, "Object Id" %></th>
+      <th><%= sort_link @q, :event, "Event" %></th>
+      <th><%= sort_link @q, :whodunnit, "Who" %></th>
+      <th><%= sort_link @q, :created_at, "Date" %></th>
+      <th>Change</th>
     </tr>
     </thead>
     <tbody>
     <% versions.each do |version| %>
         <tr>
           <td><%= version.id %></td>
+          <td><%= version.item_id %></td>
           <td><%= version.event %></td>
+          <td>
           <% begin %>
-          <td><%= version.user %></td>
+          <%= version.user %>
           <% rescue %>
-          <td><%= version.whodunnit %></td>
+          <%= version.whodunnit %>
           <% end %>
+          </td>
           <td><%= version.created_at.strftime("%d/%m/%Y %H:%M") %></td>
-          <td><%= version.object %></td>
+          <td>
+            <% version.changeset.each do |k,v| %>
+                <%= k.humanize %>:&nbsp;
+                <code><%= v[0]==nil ? "nil":v[0] %></code>
+                &nbsp;=>&nbsp;
+                <code><%= v[1]==nil ? "nil":v[1] %></code>
+                <br>
+            <% end %>
+          </td>
         </tr>
     <% end %>
     </tbody>
@@ -29,3 +41,4 @@
 
   <%= paginate versions, views_prefix: 'aca_rails' %>
 </div>
+
