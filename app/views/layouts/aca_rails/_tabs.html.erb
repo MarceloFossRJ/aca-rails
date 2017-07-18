@@ -65,5 +65,22 @@
       </li>
   <% end %>
 
+  <% if action == "versions" %>
+      <li class="nav-item  ml-auto">
+        <%= search_form_for @q, url: versions_users_path, :html => { :class => 'navbar-search form-inline float-right', :id => 'quick_search'}   do |f| %>
+            <%= f.search_field 'event_or_object_changes_cont', :class => 'form-control', :placeholder => "Quick Search" %>
+
+            <button type="button" class="close pl-1" aria-label="Close">
+              <span aria-hidden="true"
+                    onclick="document.getElementById('event_cont').value='';"
+                    ondblclick="document.getElementById('event_cont').value='';
+                        document.getElementById('quick_search').submit();">
+                &times;
+              </span>
+            </button>
+        <% end %>
+      </li>
+  <% end %>
+
 </ul>
 &nbsp;
