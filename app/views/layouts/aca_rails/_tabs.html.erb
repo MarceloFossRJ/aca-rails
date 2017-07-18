@@ -1,6 +1,6 @@
 <!-- Tab menu-->
 <%
-  classe_index = classe_new = classe_edit = classe_show = classe_versions = "nav-link"
+  classe_index = classe_new = classe_edit = classe_show = classe_versions = classe_version = "nav-link"
   case action
     when "index"
       classe_index = "nav-link active"
@@ -12,6 +12,8 @@
       classe_show = "nav-link active"
     when "versions"
       classe_versions = "nav-link active"
+    when "version"
+      classe_version = "nav-link active"
   end
 %>
 
@@ -33,12 +35,15 @@
   </li>
   <% end %>
 
-  <% if action=="edit" or action=="show" %>
+  <% if action=="edit" || action=="show" || action=="version" %>
       <li class="nav-item">
         <%= link_to "Edit",{controller: controller_class , action: "edit"}, class: classe_edit %>
       </li>
       <li class="nav-item">
         <%= link_to "Show",{controller: controller_class , action: "show"}, class: classe_show %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Version",{controller: controller_class , action: "version"}, class: classe_version %>
       </li>
   <% end %>
 

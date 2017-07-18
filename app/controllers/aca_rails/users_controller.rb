@@ -64,6 +64,16 @@ module AcaRails
       end
     end
 
+    def version
+      @q = UserVersion.ransack( { item_id_eq: params[:id] })
+      @versions = @q.result(distinct: true).order('id desc').page params[:page]
+
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @versions }
+      end
+    end
+
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_user

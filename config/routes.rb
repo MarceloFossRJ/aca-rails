@@ -10,7 +10,9 @@ AcaRails::Engine.routes.draw do
 
   resources :users do
     collection { get :versions }
+
   end
+  get 'users/:id/version' => 'users#version', as: :version_user
 
   resources :changepwds
   resources :my_profile
