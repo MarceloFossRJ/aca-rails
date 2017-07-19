@@ -65,7 +65,18 @@ module AcaRails
     end
 
     def version
-      @q = UserVersion.ransack( { item_id_eq: params[:id] })
+
+      logger.debug "0 params[:id]=#{params[:id]}"
+      logger.debug "1 params[:q]=#{params[:q]}"
+      logger.debug params.inspect
+      if params[:q]== nil
+        params[:q] = { item_id_eq: params[:id] }
+      else
+        params[:q].merge({ item_id_eq: params[:id] })
+      end
+      logger.debug "2 params[:q]=#{params[:q]}"
+      logger.debug params.inspect
+      @q = UserVersion.ransack(params[:q])
       @versions = @q.result(distinct: true).order('id desc').page params[:page]
 
       respond_to do |format|
