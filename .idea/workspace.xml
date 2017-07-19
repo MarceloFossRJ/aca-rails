@@ -4,8 +4,7 @@
     <list default="true" id="753f8186-d25d-437f-949d-af589564d775" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb" afterPath="$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -68,75 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
               <caret line="69" column="7" lean-forward="false" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_versions.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-              <folding>
-                <element signature="e#973#979#0#HTML" expanded="true" />
-                <element signature="e#1055#1061#0#HTML" expanded="true" />
-                <element signature="e#1063#1069#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_tabs.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="93" column="63" lean-forward="false" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="128" lean-forward="false" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -218,10 +153,10 @@
         <option value="$PROJECT_DIR$/db/seed.rb" />
         <option value="$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -1195,7 +1130,7 @@
       <updated>1499367472575</updated>
       <workItem from="1499367474041" duration="35000" />
       <workItem from="1499367812220" duration="5913000" />
-      <workItem from="1499388112701" duration="158815000" />
+      <workItem from="1499388112701" duration="158996000" />
     </task>
     <task id="LOCAL-00001" summary="configure test tools">
       <created>1499390612958</created>
@@ -1414,11 +1349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500387158207</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="implemented search to single object version">
+      <created>1500432868408</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1500432868408</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164763000" />
+    <option name="totallyTimeSpent" value="164944000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1506,7 +1448,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Include rails.js and correct table layout for responsive" />
     <MESSAGE value="Correct Tab behavior for responsive" />
     <MESSAGE value="Added font-awesome to project" />
     <MESSAGE value="login implementation" />
@@ -1531,7 +1472,8 @@
     <MESSAGE value="Improved versions appearance, showing explicitly the changes and grid ordering and layout" />
     <MESSAGE value="implemented quick search for versions" />
     <MESSAGE value="implemented single object version" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented single object version" />
+    <MESSAGE value="implemented search to single object version" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented search to single object version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1863,14 +1805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="69" column="7" lean-forward="false" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/1e05450b/b9ea8e88-bd85-4463-879b-52b083bb69dd/main.aca_rails_user_versions">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1884,38 +1818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/aca_rails/users/versions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#973#979#0#HTML" expanded="true" />
-            <element signature="e#1055#1061#0#HTML" expanded="true" />
-            <element signature="e#1063#1069#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1944,18 +1850,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="33" />
+        <state relative-caret-position="-860">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_tabs.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="93" column="63" lean-forward="false" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#973#979#0#HTML" expanded="true" />
+            <element signature="e#1055#1061#0#HTML" expanded="true" />
+            <element signature="e#1063#1069#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="69" column="7" lean-forward="false" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
           <folding />
         </state>
       </provider>
