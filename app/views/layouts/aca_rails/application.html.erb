@@ -78,6 +78,9 @@
 
   <%= yield %>
 
+  <div class="jumbotron">
+    <%= debug(params) if Rails.env.development? %>
+  </div>
 </div>
 
 

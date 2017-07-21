@@ -16,6 +16,7 @@ module AcaRails
           session[:uid] = user.id
           session[:lgtm] = Time.now
           session[:cip] = request.remote_ip
+          logger.debug "remember me #{params[:login][:remember_me]}"
           if params[:login][:remember_me]
             cookies.permanent[:auth_token] = user.auth_token
           else

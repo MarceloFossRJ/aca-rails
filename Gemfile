@@ -18,11 +18,12 @@ gem "paper_trail", "~> 7.0.3"
 gem "ransack", "~> 1.8.3"
 gem "kaminari", "~>1.0.1"
 gem "bcrypt", "~>3.1.11"
-
+gem "brakeman"
 group :development, :test do
   gem "rspec-rails", "~> 3.6.0"
   gem "factory_girl_rails", "~> 4.8.0"
   gem "shoulda", "~> 3.5.0"
+  gem "better_errors"
 end
 group :test do
   gem "database_cleaner", "~> 1.6.1"

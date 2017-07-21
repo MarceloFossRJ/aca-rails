@@ -121,7 +121,8 @@ module AcaRails
       #end
 #      @current_user ||= User.find_by_auth_token(cookies[:auth_token])
       begin
-        @current_user ||= User.find(session[:uid]) if session[:uid]
+        #@current_user ||= User.find(session[:uid]) if session[:uid]
+        @current_user ||= User.find_by_auth_token(cookies[:auth_token])
       rescue
         kill_session
       end

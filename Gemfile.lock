@@ -57,6 +57,11 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
     bcrypt (3.1.11)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    brakeman (3.7.0)
     builder (3.2.3)
     capybara (2.14.4)
       addressable
@@ -65,6 +70,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    coderay (1.1.1)
     concurrent-ruby (1.0.5)
     cucumber (2.4.0)
       builder (>= 2.1.2)
@@ -219,6 +225,8 @@ PLATFORMS
 DEPENDENCIES
   aca_rails!
   bcrypt (~> 3.1.11)
+  better_errors
+  brakeman
   capybara (~> 2.14.4)
   cucumber-rails (~> 1.5.0)
   database_cleaner (~> 1.6.1)
