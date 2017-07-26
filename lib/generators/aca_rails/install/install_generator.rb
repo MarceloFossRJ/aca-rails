@@ -12,6 +12,9 @@ module AcaRails
     def config_routes
       route "mount AcaRails::Engine => '/aca_rails'"
     end
+    def create_rakefile
+      copy_file   "aca_rails.rake", "lib/tasks/aca_rails.rake"
+    end
   end
 end
 
