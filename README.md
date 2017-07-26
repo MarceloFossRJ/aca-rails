@@ -30,8 +30,9 @@ $ rails generate aca_rails:install
 
 ## Configuration
 ### Email
-
+Aca_Rails uses the application default configuration to send emails. Configure it before installing it.
 ### Admin/Root user
+With the email properly configured, you can now create the 
 To create a*root*admin user, run the use_root aca_rails rake task:
 ```bash
 $ rake aca_rails:use_root
