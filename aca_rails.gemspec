@@ -20,15 +20,17 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
 
-  s.add_dependency "rspec-rails", "~> 3.6.0"
-  s.add_dependency "capybara", "~> 2.14.4"
-  s.add_dependency "factory_girl_rails", "~> 4.8.0"
-  s.add_dependency "shoulda", "~> 3.5.0"
-  s.add_dependency "database_cleaner", "~> 1.6.1"
-  s.add_dependency "cucumber-rails", "~> 1.5.0"
+  s.add_development_dependency "rspec-rails", "~> 3.6.0"
+  s.add_development_dependency "capybara", "~> 2.14.4"
+  s.add_development_dependency "factory_girl_rails", "~> 4.8.0"
+  s.add_development_dependency "shoulda", "~> 3.5.0"
+  s.add_development_dependency "database_cleaner", "~> 1.6.1"
+  s.add_development_dependency "cucumber-rails", "~> 1.5.0"
 
   s.add_dependency "ransack", "~> 1.8.3"
   s.add_dependency "kaminari", "~>1.0.1"
   s.add_dependency "bcrypt", "~>3.1.11"
+  s.add_dependency "paper_trail", "~> 7.0.3"
+  s.add_dependency "simple_form", "~> 3.5.0"
 
 end

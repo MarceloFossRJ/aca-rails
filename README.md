@@ -1,5 +1,7 @@
 # AcaRails
-Short description and motivation.
+ACA is an acronym for Access Control Application.  
+It is an authentication and authorization solution for Ruby on Rails apps.
+ 
 
 ## Usage
 How to use my plugin.
@@ -20,6 +22,18 @@ Or install it yourself as:
 ```bash
 $ gem install aca_rails
 ```
+
+Run the generator to install:
+```bash
+$ rails generate aca_rails:install
+```
+
+## Configuration
+### Email
+
+### Admin/Root user
+
+### Aca_Rails parameters
 
 ## Contributing
 Contribution directions go here.
