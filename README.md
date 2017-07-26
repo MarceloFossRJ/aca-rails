@@ -32,6 +32,13 @@ $ rails generate aca_rails:install
 ### Email
 
 ### Admin/Root user
+To create a*root*admin user, run the rake the aca_rails rake task:
+```bash
+$ rake aca_rails:all
+```
+The admin user is created with the default password*admin*.  
+The root user is created with the default password*root*.  
+**The password will be asked to be changed in the first login**  
 
 ### Aca_Rails parameters
 

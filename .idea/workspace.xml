@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="753f8186-d25d-437f-949d-af589564d775" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake" afterPath="$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -100,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-36">
-                <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <first_editor relative-caret-position="492">
+                <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -112,8 +112,8 @@
       <file leaf-file-name="aca_rails.rake" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="448">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -197,9 +197,9 @@
         <option value="$PROJECT_DIR$/lib/generators/install/install_generator.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/aca_rails/application.css" />
         <option value="$PROJECT_DIR$/aca_rails.gemspec" />
+        <option value="$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake" />
-        <option value="$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb" />
       </list>
     </option>
   </component>
@@ -626,7 +626,7 @@
       <workItem from="1500616908160" duration="1126000" />
       <workItem from="1500657262184" duration="6592000" />
       <workItem from="1500815346914" duration="858000" />
-      <workItem from="1500958977137" duration="4245000" />
+      <workItem from="1500958977137" duration="4995000" />
     </task>
     <task id="LOCAL-00001" summary="configure test tools">
       <created>1499390612958</created>
@@ -873,11 +873,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501034157130</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="create rake task to populate db with root and admin users">
+      <created>1501034527891</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1501034527891</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183316000" />
+    <option name="totallyTimeSpent" value="184066000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -965,7 +972,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change password implementation" />
     <MESSAGE value="Fix papaer_trail whoddunit feature" />
     <MESSAGE value="Implement update user profile" />
     <MESSAGE value="Implemented initializer, parameters" />
@@ -990,7 +996,8 @@
     <MESSAGE value="removed logger" />
     <MESSAGE value="intalled brakeman" />
     <MESSAGE value="fix dependencies and add route configuration to install generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix dependencies and add route configuration to install generator" />
+    <MESSAGE value="create rake task to populate db with root and admin users" />
+    <option name="LAST_COMMIT_MESSAGE" value="create rake task to populate db with root and admin users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1303,22 +1310,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-36">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seed.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="1" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="492">
+            <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1332,8 +1339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="448">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding />
         </state>
       </provider>
