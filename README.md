@@ -32,7 +32,15 @@ $ rails generate aca_rails:install
 ### Email
 
 ### Admin/Root user
-To create a*root*admin user, run the rake the aca_rails rake task:
+To create a*root*admin user, run the use_root aca_rails rake task:
+```bash
+$ rake aca_rails:use_root
+```
+To create a named*admin*administrator user, run the use_admin aca_rails rake task:
+```bash
+$ rake aca_rails:use_admin
+```
+If you want to create both users:
 ```bash
 $ rake aca_rails:all
 ```
