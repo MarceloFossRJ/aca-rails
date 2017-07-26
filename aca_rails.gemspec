@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "A role based authentication and authorization gem for RoR"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.0.4"
 
