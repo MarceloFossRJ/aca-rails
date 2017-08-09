@@ -19,7 +19,7 @@ module AcaRails
 
       if user
         user.send_password_reset
-        redirect_to login_path, :notice => "Email sent with password reset instructions."
+        redirect_to password_resets_path, :notice => "Email sent with password reset instructions."
       else
         redirect_to login_path, :alert => "Email not registered. Password reset email not sent."
       end
