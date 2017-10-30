@@ -19,6 +19,8 @@ gem "ransack", "~> 1.8.3"
 gem "kaminari", "~>1.0.1"
 gem "bcrypt", "~>3.1.11"
 gem "brakeman"
+gem "rack-cors"
+
 group :development, :test do
   gem "rspec-rails", "~> 3.6.0"
   gem "factory_girl_rails", "~> 4.8.0"
