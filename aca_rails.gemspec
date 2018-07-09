@@ -32,6 +32,6 @@ Gem::Specification.new do |s|
   s.add_dependency "kaminari", "~>1.0.1"
   s.add_dependency "bcrypt", "~>3.1.11"
   s.add_dependency "paper_trail", "~> 7.0.3"
-  s.add_dependency "simple_form", "~> 3.5.0"
+  s.add_dependency "simple_form", "~> 4.0.1"
 
 end

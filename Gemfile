@@ -13,7 +13,7 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem "simple_form", "~> 3.5.0"
+gem "simple_form", "~> 4.0.1"
 gem "paper_trail", "~> 7.0.3"
 gem "ransack", "~> 1.8.3"
 gem "kaminari", "~>1.0.1"
