@@ -1,0 +1,50 @@
+<li class="nav-item active">
+  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Features</a>
+</li>
+
+<% if current_user %>
+  <% if current_user.is_admin? %>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="AdminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Administrate
+      </a>
+      <div class="dropdown-menu" aria-labelledby="AdminDropdown">
+        <a class="dropdown-item" href="<%= users_path %>">User management</a>
+        <a class="dropdown-item" href="<%= password_resets_path %>">Reset password</a>
+        <a class="dropdown-item" href="#">Preferences</a>
+      </div>
+    </li>
+  <% end %>
+  <li class="nav-item dropdown" >
+    <a class="nav-link dropdown-toggle" href="#" id="UserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-user"></i> <%= current_user.name %>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="UserDropdown">
+      <a class="dropdown-item" href="<%= edit_changepwd_path(current_user.id) %>">Change password</a>
+      <a class="dropdown-item" href="<%= edit_my_profile_path(current_user) %>">Profile</a>
+      <% if AcaRails.user_can_inactivate_account || AcaRails.user_can_delete_account %>
+        <a class="dropdown-item" href="<%= edit_inactivate_path(current_user) %>">Inactivate / remove account</a>
+      <% end %>
+    </div>
+  </li>
+  <li class="nav-item">
+    <%= link_to logout_path, title: "Logout", data: { toggle: 'tooltip', placement: 'botton' }, :class => 'nav-link' do %>
+      <i class="fa fa-sign-out"></i>
+    <% end %>
+  </li>
+<% else %>
+  <% if AcaRails.user_can_signup %>
+    <li class="nav-item">
+      <a class="nav-link" href="<%= signup_path %>">Sign Up</a>
+    </li>
+  <% end %>
+
+  <li class="nav-item">
+    <%= link_to login_path, title: "Login", data: { toggle: 'tooltip', placement: 'botton' }, :class => 'nav-link' do %>
+      <i class="fa fa-sign-in"></i> Login
+    <% end %>
+  </li>
+<% end %>
