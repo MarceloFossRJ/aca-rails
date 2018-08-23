@@ -13,7 +13,13 @@ AcaRails.setup do |config|
   config.use_forgotten_password = true
   config.default_from_email = "admin@aca_rails.com"
   config.use_remember_me = true
-  config.send_welcome_email = true
-  config.user_confirm_signup_by_email = true
+  config.send_welcome_email = false
+  config.user_confirm_signup_by_email = false
   config.hours_to_expire_signup_confirmation = 48
+  config.login_title = "Aca-Rails Login"
+
+  #edit/insert here the path that you want to override in your application
+  AcaRails::Engine.routes.prepend do
+    #root to: '/dashboards#index'
+  end
 end

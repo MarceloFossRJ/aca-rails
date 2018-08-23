@@ -16,4 +16,5 @@ AcaRails.setup do |config|
   config.send_welcome_email = true
   config.user_confirm_signup_by_email = true
   config.hours_to_expire_signup_confirmation = 48
+  config.login_title = "Aca-Rails Login"
 end

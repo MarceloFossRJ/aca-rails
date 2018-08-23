@@ -57,6 +57,9 @@ module AcaRails
     #user can use email or login field to login in the system
     mattr_accessor :use_email_to_authenticate
     self.use_email_to_authenticate = true
+
+    mattr_accessor :login_title
+    self.login_title = "Aca Rails <small>Login</small>"
   end
 
   # this function maps the vars from your app into your engine
