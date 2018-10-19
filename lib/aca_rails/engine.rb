@@ -50,7 +50,7 @@ module AcaRails
 
     mattr_accessor :hours_to_expire_signup_confirmation
     self.hours_to_expire_signup_confirmation = 48
-##
+
     mattr_accessor :use_paper_trail
     self.use_paper_trail = true
 

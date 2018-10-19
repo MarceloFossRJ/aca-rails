@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="753f8186-d25d-437f-949d-af589564d775" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aca_rails.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aca_rails.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/aca_rails/engine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/aca_rails/engine.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -53,6 +53,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="engine.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/aca_rails/engine.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,75 +89,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_navigation_links.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation_links.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="361">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome_email.text.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/aca_rails/user_mailer/welcome_email.text.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="signup_confirmation.text.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/aca_rails/user_mailer/signup_confirmation.text.erb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_record.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/aca_rails/application_record.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="engine.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/aca_rails/engine.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aca_rails.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/aca_rails.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_mailer.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/aca_rails/application_mailer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="1881">
+              <caret line="99" selection-start-line="92" selection-end-line="99" />
             </state>
           </provider>
         </entry>
@@ -158,6 +130,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Marcelo Foss &lt;marcelo.foss.rj@gmail.com&gt;" />
         <option value="marcelofossrj &lt;marcelo.foss.rj@gmail.com&gt;" />
       </list>
     </option>
@@ -166,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/aca_rails/my_profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/users/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170711004629_add_auth_token_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170711120653_add_password_reset_to_users.rb" />
@@ -188,7 +160,6 @@
         <option value="$PROJECT_DIR$/app/inputs/hidden_input.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_actions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/password_resets/index.html.erb" />
-        <option value="$PROJECT_DIR$/lib/aca_rails/engine.rb" />
         <option value="$PROJECT_DIR$/db/seed.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_versions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/aca_rails/users/version.html.erb" />
@@ -196,9 +167,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/paper_trail.rb" />
-        <option value="$PROJECT_DIR$/app/views/aca_rails/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/dummy/config/initializers/aca_rails.rb" />
         <option value="$PROJECT_DIR$/lib/generators/install/templates/aca_rails.rb" />
         <option value="$PROJECT_DIR$/lib/generators/install/install_generator.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/aca_rails/application.css" />
@@ -217,6 +185,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation_links.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rb" />
+        <option value="$PROJECT_DIR$/spec/dummy/config/initializers/aca_rails.rb" />
+        <option value="$PROJECT_DIR$/app/views/aca_rails/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/lib/aca_rails/engine.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb" />
       </list>
     </option>
   </component>
@@ -231,7 +204,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1400" />
+    <option name="width" value="1435" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -241,17 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="aca_rails" type="cbb8eebc:String" user="aca_rails" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,31 +231,41 @@
               <item name="aca_rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aca_rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aca_rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aca_rails" type="b2602c69:ProjectViewProjectNode" />
               <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="aca_rails" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="aca_rails" type="cbb8eebc:String" user="aca_rails" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,7 +457,13 @@
       <workItem from="1532601569053" duration="326000" />
       <workItem from="1533040850743" duration="1784000" />
       <workItem from="1533173799584" duration="4019000" />
-      <workItem from="1533997336783" duration="10557000" />
+      <workItem from="1533997336783" duration="21967000" />
+      <workItem from="1535060881544" duration="998000" />
+      <workItem from="1536918086425" duration="94000" />
+      <workItem from="1536918288229" duration="2540000" />
+      <workItem from="1537327092918" duration="599000" />
+      <workItem from="1537400929413" duration="883000" />
+      <workItem from="1538670243305" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Rspec config &amp; login test">
       <created>1509669871182</created>
@@ -528,11 +507,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532300566452</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change appctlr to inherit from parent app">
+      <created>1534947007327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534947007327</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Login title parameter">
+      <created>1535030848979</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1535030848979</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225033000" />
+    <option name="totallyTimeSpent" value="241570000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -544,10 +537,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1435" height="860" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26656848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28140703" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -556,7 +548,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.22018349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496318" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32797858" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3266399" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,29 +619,11 @@
     <MESSAGE value="user model test, refactor backend controller to frontend controller" />
     <MESSAGE value="refactor home controller" />
     <MESSAGE value="adjust menu to bootsrap final" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust menu to bootsrap final" />
+    <MESSAGE value="change appctlr to inherit from parent app" />
+    <MESSAGE value="Add Login title parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Login title parameter" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="81" selection-start-line="2" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/aca_rails/user_types_helper.rb" />
-    <entry file="file://$PROJECT_DIR$/app/helpers/aca_rails/users_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="99" selection-start-line="92" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/user_types_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_actions.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -710,13 +684,6 @@
     <entry file="file://$PROJECT_DIR$/spec/dummy/config/database.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seed.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aca_rails.gemspec">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -740,25 +707,8 @@
     <entry file="file://$PROJECT_DIR$/lib/tasks/cucumber.rake">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/aca_rails/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/aca_rails_tasks.rake">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/aca_rails/application.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,13 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -841,17 +784,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/aca_rails/engine.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/signup_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-        </state>
+        <state relative-caret-position="-239" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation_links.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="133">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -862,17 +803,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/aca_rails/_navigation_links.html.erb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/install_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seed.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/aca_rails/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/dummy/config/initializers/aca_rails.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/aca_rails/install/templates/aca_rails.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/aca_rails/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/aca_rails/engine.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/aca_rails/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="361">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="99" selection-start-line="92" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/aca_rails/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

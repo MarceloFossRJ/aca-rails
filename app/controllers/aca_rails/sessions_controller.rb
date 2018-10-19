@@ -16,13 +16,14 @@ module AcaRails
           session[:uid] = user.id
           session[:lgtm] = Time.now
           session[:cip] = request.remote_ip
-          logger.debug "remember me #{params[:login][:remember_me]}"
+
           if params[:login][:remember_me]
             cookies.permanent[:auth_token] = user.auth_token
           else
             cookies[:auth_token] = user.auth_token
           end
-          redirect_to root_url, :notice => "You are now logged in!"
+
+          redirect_to after_sign_up_path #root_url(:notice => "You are now logged in!")
         else
           if user && (user.is_locked? || !user.is_active?)
             flash[:error] = "Account is blocked, contact system admin."
@@ -45,7 +46,15 @@ module AcaRails
     def destroy
       kill_session
 
-      redirect_to login_path, :notice => "You have logged out!"
+      redirect_to after_log_out_path
+    end
+
+    def after_sign_up_path
+      root_url(:notice => "You are now logged in!")
+    end
+
+    def after_log_out_path
+      login_path(:notice => "You have logged out!")
     end
   end
 end
